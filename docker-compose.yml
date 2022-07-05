@@ -1,0 +1,12 @@
+version: '3'
+services:
+  mqtt_cam:
+    restart: always
+    build: .
+    container_name: 'RTC'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./opt:/root/opt
+    device:
+      - /dev/video0:/dev/video0:mwr
