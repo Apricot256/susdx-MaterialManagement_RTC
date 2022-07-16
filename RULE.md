@@ -5,13 +5,13 @@ this program is only only supports json format
 <br><br>
 ## MQTT Request
 ### MQTT Topic
-会社名/社内番号(%04d)
-
+project-name/id(%04d)
+<br><br>
 ### MQTT Value
 |   Key   |  D-type  |  Value  | example |
 |  ----   |   ----   |   ----  |   ----  |
-| command |  srting  | コマンド |  'take' |
-
+| command |  srting  | command |  'take' |
+<br>
 ### Example
 Topic: 
 ```
@@ -27,14 +27,14 @@ Value:
 
 ### MQTT Topic
 image
-
+<br><br>
 ### MQTT Value
 |   Key   |  D-type  |  Value  | example |
 |  ----   |   ----   |   ----  |   ----  |
 | fac  |string  |  企業名 | 'Kyoshin' |
 |  id  | int    |識別番号(工場など) | 1|
 | img |  srting  | based64-image |  '/4TDKRX...' |
-
+<br>
 ### Example
 Topic: 
 ```
@@ -47,7 +47,7 @@ Value:
 {
     'command': 'take',
     'fac': 'Kyoshin',
-    'if': 0001,
+    'id': 0001,
     'img': '/4TDKRX...'
 }
 ```
