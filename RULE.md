@@ -9,6 +9,7 @@
 |  camId  |  srting  | command |  "0001" |
 | command |  srting  | command |  "take" |
 <br>
+
 ### Example
 Topic: 
 ~~~
