@@ -2,13 +2,11 @@
 ## MQTT Request
 ### MQTT Topic
 **"projectName/deviceID"**
-<br><br>
 ### MQTT Value
 |   Key   |  D-type  |  Value  | example |
 |  ----   |   ----   |   ----  |   ----  |
 |  camId  |  srting  | command |  "0001" |
 | command |  srting  | command |  "take" |
-<br>
 
 ### Example
 Topic: 
@@ -22,13 +20,11 @@ Value:
     "command": "take"
 }
 ~~~
-<br><br>
 
 ## MQTT Response
 
 ### MQTT Topic
 **"image"**
-<br><br>
 ### MQTT Value
 |   Key   |  D-type  |  Value  | example |
 |  ----   |   ----   |   ----  |   ----  |
@@ -36,7 +32,6 @@ Value:
 |    camId    | string |    cameraID   |     "0001"    |
 |    devId    | string |    deviceID   |     "0001"    |
 |     img     | srting | based64-image |  "/4TDKRX..." |
-<br>
 
 ### Example
 Topic: 
