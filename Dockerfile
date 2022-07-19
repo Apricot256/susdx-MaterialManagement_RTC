@@ -7,4 +7,4 @@ RUN pip install --upgrade setuptools
 
 RUN pip install opencv-python paho-mqtt
 
-CMD [ "python3", "opt/main.py" ]
+CMD [ "python3", "/root/opt/main.py" ]

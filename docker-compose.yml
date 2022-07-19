@@ -8,7 +8,7 @@ services:
     tty: true
     volumes:
       - ./opt:/root/opt
-    device:
+    devices:
       - /dev/video0:/dev/video0:mwr
-      # - /dev/video1:/dev/video2:mwr
-      # - /dev/video2:/dev/video1:mwr
+      - /dev/video1:/dev/video2:mwr
+      - /dev/video2:/dev/video1:mwr
