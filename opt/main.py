@@ -4,6 +4,7 @@ import paho.mqtt.client as mqtt
 import cv2
 import base64
 import ssl
+import json
 
 Topic = 'request/testProject'
 
@@ -33,6 +34,10 @@ def on_message(client, userdata, msg):
 
 
 if __name__ == '__main__':
+
+  with open('./opt/config.json') as f:
+    config = json.loads(f.read())
+
   client = mqtt.Client(transport = 'websockets')
   client.ws_set_options(path = '/')
   client.tls_set(tls_version=ssl.PROTOCOL_TLSv1_2)
@@ -40,5 +45,5 @@ if __name__ == '__main__':
   client.on_disconnect = on_disconnect
   client.on_message = on_message
 
-  client.connect("sus-dx.sora210.net", 8088, 60)  # connect
+  client.connect("sus-dx.sora210.net", 8080, 60)  # connect
   client.loop_forever()

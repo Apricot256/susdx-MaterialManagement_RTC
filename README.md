@@ -23,5 +23,4 @@ docker-compose up -d --build
     <img height="64" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
     <img height="64px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg">
     <img height="64px" src="https://mqtt.org/assets/downloads/mqtt-ver.png">
-
 </p>

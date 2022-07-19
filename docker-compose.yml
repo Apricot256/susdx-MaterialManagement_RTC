@@ -10,3 +10,5 @@ services:
       - ./opt:/root/opt
     device:
       - /dev/video0:/dev/video0:mwr
+      # - /dev/video1:/dev/video2:mwr
+      # - /dev/video2:/dev/video1:mwr
